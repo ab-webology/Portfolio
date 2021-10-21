@@ -1,0 +1,228 @@
+* {
+  /* background-color: aqua; */
+}
+.containers {
+  min-height: 150vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+/* about_info style  */
+.About {
+}
+.my_mame,
+.skills_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px;
+  margin-right: 20px;
+  box-shadow: 3px 3px 5px 3px #00b4d8;
+
+  transition: all 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .my_mame,
+  .skills_cont {
+    padding: 10px;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .containers {
+    min-height: 100vh;
+  }
+
+  .skills_img {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .my_mame,
+  .skills_cont {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .containers {
+    min-height: 100vh;
+  }
+}
+.bg {
+  box-shadow: 3px 3px 5px 3px #000;
+}
+.my_mame:hover,
+.skills_cont:hover {
+  transform: scale(1.1);
+}
+.icon_for_name {
+  width: 100px;
+  height: 100px;
+  align-self: flex-start;
+  padding: 10px;
+
+  margin-right: 50px;
+  border-radius: 50%;
+  background-color: #00b4d8;
+}
+.name_icon {
+  color: #000;
+
+  font-size: 50px;
+  margin: 0 25px;
+}
+.my_role {
+  margin-top: 20px;
+  /* margin-left: 20px; */
+}
+.my_mame span,
+.my_role span {
+  color: #ee1d52;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  text-transform: capitalize;
+}
+.my_mame h3,
+.my_role h3 {
+  color: #00b4d8;
+  font-size: 20px;
+
+  text-transform: capitalize;
+}
+.my_role h3 {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.my_mame h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  /* font-size: 25px; */
+}
+.skills_cont {
+  margin-top: 50px;
+  /* 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.skills_img {
+  justify-self: flex-start;
+  width: 110px;
+  height: 110px;
+
+  cursor: pointer;
+  margin-right: 45px;
+  padding: 15px;
+
+  position: relative;
+  transition: all 1s;
+}
+.skills_img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 5px;
+  height: 90%;
+
+  background-color: #ee1d52;
+}
+.skills_img2 {
+  margin-right: 0;
+  justify-self: flex-end;
+}
+.skills_img2::before {
+  left: 0;
+}
+.skills_img img {
+  width: 100%;
+  background-color: #00b4d8;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+.skills_title {
+  margin-left: 20px;
+  /* margin-top: -10px; */
+  color: #00b4d8;
+}
+.skills_info {
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.single_icon {
+  margin-top: 40px;
+  margin-left: 10px;
+  justify-self: center;
+}
+.html,
+.css,
+.js,
+.react {
+  cursor: pointer;
+  font-size: 3.5em;
+  color: #ee1d52;
+  margin-left: 15px;
+
+  opacity: 0.9;
+
+  animation: animte_skills 2s 5;
+  transition: all 1s;
+}
+.css,
+.react {
+  color: #00b4d8;
+}
+.html:hover,
+.js:hover,
+.css:hover,
+.react:hover {
+  color: #5e5e5e;
+  opacity: 1;
+  transform: translateY(-7px);
+}
+@keyframes animte_skills {
+  0% {
+    color: #ee1d52;
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+  100% {
+  }
+}
+.skill_lists {
+  text-align: center;
+  color: #00b4d8;
+}
+.education_title {
+  margin-left: 5px;
+}
+.education_cont {
+  justify-content: space-between;
+  align-items: center;
+}
+.education_desc {
+  font-size: 18px;
+  line-height: 25px;
+}
+/* .my_role span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.my_role h3 {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+} */
