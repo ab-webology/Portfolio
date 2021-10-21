@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #000814; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  min-height: 200vh;
+}
+.all_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+  /* border: solid 2px #00b4d8; */
+}
+.send_message2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 25px;
+  box-shadow: 5px 5px 10px #ee1d52;
+}
+.send_title {
+  margin-bottom: 15px;
+  color: #ee1d52;
+}
+/* about_info style  */
+.about_info {
+  margin-bottom: 20px;
+  width: 530px;
+  height: 250px;
+
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 5px 5px 10px #00b4d8; */
+}
+
+.left_info {
+  margin-right: 20px;
+}
+.left_info .items {
+  color: #00b4d8;
+}
+.right_info .items {
+  color: #ee1d52;
+}
+.right_info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left_info .items,
+.right_info .items {
+  margin-bottom: 15px;
+}
+
+.names,
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.message_text textarea {
+  width: 510px;
+  padding: 10px;
+
+  color: #fff;
+  border: solid 1px #00b4d8;
+}
+.submit_btn .submit {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: -250px;
+  padding: 15px 50px;
+
+  background-color: #00b4d8;
+  color: #fff;
+
+  transition: all 1s;
+}
+.submit_btn .submit:hover {
+  background-color: #ee1d52;
+}
+.last_name,
+.phone_input {
+  margin-left: 20px;
+}
+.first_name,
+.email {
+  margin-right: 10px;
+}
+.lable {
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #00b4d8;
+}
+.text {
+  background: none;
+  border: none;
+
+  border: solid 1px #00b4d8;
+  color: #ee1d52;
+
+  padding: 10px 35px;
+}
+input:focus-within {
+  border: solid 1px #00b4d8;
+}
